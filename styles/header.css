@@ -14,12 +14,15 @@
     justify-content: space-between;
     align-items: center;
 position: relative;
+background-color: var(--cor-cabecalho);
+padding: 1em;
     
 }
 
 .container {
     display: flex;
     align-items: center;
+    
 }
 
 .container__imagem {
@@ -33,7 +36,7 @@ top: 100%;
 width: 60vw;
 }
 
-.container__botao:checked~. lista-menu{
+.container__botao:checked~ lista-menu{
     display: block;
 }
 
@@ -49,4 +52,31 @@ width: 60vw;
 .lista-menu__link{
     background: var(--roxo);
     text-transform: uppercase;
+}
+
+.container__imagem, .container__frase {
+    padding: 1em;
+}
+
+.container__titulo, .container__frase{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__frase{
+        padding-left: 5em;
+        font-size: 20px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .container__titulo, .container__titulo--negrito {
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
 }
