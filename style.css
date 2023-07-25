@@ -6,11 +6,14 @@
     --branco: #FFFFFF;
     --amarelo: #FECD2F;
     --roxo: #733887;
---fonte-principal: "Poppins";
+    --cor-de-fundo: #9949B4;
+    --cor-cabecalho: #FFFFFF;
+    --fonte-principal: "Poppins";
 }
 
 body {
     background-color: var(--cor-de-fundo);
+    margin: 0;
 }
 
 h1 {
